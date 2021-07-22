@@ -42,6 +42,7 @@ set(publicHeaders
         "threepp/helpers/Box3Helper.hpp"
         "threepp/helpers/PlaneHelper.hpp"
 
+        "threepp/loaders/AssimpLoader.hpp"
         "threepp/loaders/ImageLoader.hpp"
         "threepp/loaders/TextureLoader.hpp"
 
@@ -172,6 +173,7 @@ set(sources
 
         "threepp/helpers/ArrowHelper.cpp"
 
+        "threepp/loaders/AssimpLoader.cpp"
         "threepp/loaders/ImageLoader.cpp"
 
         "threepp/math/Box2.cpp"
@@ -231,7 +233,8 @@ target_link_libraries(threepp
         CONAN_PKG::glfw
         CONAN_PKG::glad
         PRIVATE
-        CONAN_PKG::stb)
+        CONAN_PKG::stb
+        CONAN_PKG::assimp)
 target_include_directories(threepp
         PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_SOURCE_DIR}/include>"

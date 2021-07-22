@@ -19,3 +19,4 @@ file(COPY "${CMAKE_SOURCE_DIR}/src/threepp/renderers/shaders/ShaderLib" DESTINAT
 
 # Textures
 file(COPY "${CMAKE_SOURCE_DIR}/data/textures" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/bin)
+file(COPY "${CMAKE_SOURCE_DIR}/data/models" DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/bin)
