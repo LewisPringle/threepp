@@ -11,7 +11,8 @@ namespace threepp {
 
     public:
         PlaneGeometry(const PlaneGeometry &) = delete;
-
+// suggest use of make_shared() here
+        
         static std::shared_ptr<PlaneGeometry> create(float width = 1, float height = 1, int widthSegments = 1, int heightSegments = 1) {
             return std::shared_ptr<PlaneGeometry>(new PlaneGeometry(width, height, widthSegments, heightSegments));
         }
